@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SuperFrets</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="app.css">
+<script src="libs/mtc.js"></script>
+<script src="libs/mtm.js"></script>
+</head>
+
+<body>
+
+<header>
+<nav>
+<ul id="nav">
+<li><h3>SuperFrets</h3></li>
+</ul>
+</nav>
+</header>
+
+<div id="dashboard">
+<div id="metronome" class="dash">
+<h1>How To</h1>
+<p>
+Welcome to SuperFrets! This is a dynamic fretboard tool to help guitar players visualize chord changes.
+</p>
+<p>
+Add a chord/scale to the right and use your number keys to cycle through the progression ('0' will display chord 10).
+Clicking on a chord will remove it from the progression.
+</p>
+<p>
+This tool is still in its infancy, so stay tuned for more updates!
+</p>
+</div>
+<div id="progression" class="dash">
+<h1>Progression</h1>
+<ol id="chord-list" class="progression"></ol>
+<div id="clear-progression-button" class="clickable"><span>Clear</span></div>
+</div>
+
+<div id="chord-form" class="dash">
+<div id="chord-selector">
+<h1>Select Chords</h1>
+<span>Root: </span><select id="root-select"></select>
+<span>Chord: </span><select id="chord-select"></select>
+<div id="add-chord-button" class="clickable"><span>Add Chord</span></div>
+</div>
+
+
+</div>
+</div>
+
+<div id="fb-container">
+<canvas id="fretboard" width="1200" height="85">Sorry, you're browser is not supported.</canvas>
+<canvas id="notes" width="1200" height="85"></canvas>
+</div>
+<script src="bundle.js"></script>
+</body>
+</html>
