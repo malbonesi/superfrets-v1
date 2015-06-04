@@ -1,0 +1,110 @@
+body{
+	margin: 0px;
+	font-family: 'Lato', sans-serif;
+}
+
+header {  
+	width: 100%; 
+	height: 55px;
+	border: solid 1px;
+	border-color: #262626;
+	background-color: #2A2C2B;
+	color: #D9CB9E;
+}
+
+h1, h3{
+		cursor: default;
+}
+
+#nav{
+	list-style: none;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.dash {
+	height: 220px;
+	display: inline-block;
+	font-size: small;
+}
+
+#metronome {
+	width: 390px;
+	border-color: blue;
+	float: left;
+	margin-left: 15px;
+	
+}
+
+#progression {
+	width: 400px;
+	border-color: red;
+	float: left;
+	text-align: center;
+}
+
+#chord-list{
+	-webkit-column-count:2;
+	-moz-column-count:2;
+	column-count:2;
+}
+
+ol.progression{
+	list-style-position: inside;
+}
+ol li:hover{
+	color: red;
+}
+
+li.selected{
+	font-weight: bold;
+}
+
+#chord-form {
+	width: 420px;
+	border-color: green;
+	clear: both;
+}
+
+#clear-progression-button {
+	width: 80px;
+	height: 20px;
+	border-radius: 5px;
+	background: #3366FF;
+	display: inline-block;
+	text-align: center;
+}
+#clear-progression-button:hover{ background-color: #CC2738; }
+
+#add-chord-button {
+	width: 80px;
+	height: 20px;
+	border-radius: 5px;
+	background: #3366FF;
+	display: inline-block;
+	text-align: center;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;      
+}
+
+#add-chord-button:hover { background-color: #BDF271; }
+
+#fb-container {
+	position: relative;
+}
+
+canvas { 
+	position: absolute;
+}
+#notes { 
+	z-index: 2;
+}
+#fretboard { 
+	z-index: 1; 
+}
