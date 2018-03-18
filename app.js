@@ -3,7 +3,7 @@ var Fretboard = require('./models/fretboard');
 var Scale = require('./models/scale');
 var Progression = require('./models/progression');
 var MainView = require('./views/main');
-var data = require('./data.json');
+var data = require('./data.js');
 
 var keyboard = new Keyboard({ active: true });
 var fretboard = new Fretboard(22, 6, data.tunings[0].notes);
